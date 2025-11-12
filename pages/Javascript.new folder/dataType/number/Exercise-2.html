@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-2 number datatype</title>
+</head>
+<body>
+    <h2>Aria of circle</h2>
+    <label>Enter radius of circle :</label>
+    <br>
+  <input type="number" id="input">
+  <br>
+  <button onclick="calculatearea()">Calculate area</button>
+  <p id="output"></p>
+
+<script>
+    function calculatearea(){
+        // input
+        let radius = document.getElementById("input").value
+        // assign
+        const pie = 3.142
+
+        // proces 
+        let area = pie * Number (radius) * Number (radius)
+        // output
+        document.getElementById("output").innerHTML = "Area of circle is :" + area
+    }
+</script>
+</body>
+</html>

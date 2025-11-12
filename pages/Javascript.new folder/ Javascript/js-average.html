@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripty</title>
+  
+</head>
+
+<body>
+    <div class="main-container">
+        <!--  -->
+        <div class="section-one">
+            
+                <!--  -->
+                <div class="sereen-box" id="display"></div>
+                <input type="text" id="input">
+                <input type="text" id="input-one">
+                <input type="text" id="input-two">
+
+                <button class="mini-box-2" onclick="showOutput()"> Click</button>
+
+                <!--  -->
+      
+        </div>
+    </div>
+</body>
+<!--  -->
+<script>
+
+    function showOutput() {
+        let x = Number(document.getElementById("input").value);
+        let y = Number(document.getElementById("input-one").value);
+        let z = Number(document.getElementById("input-two").value);
+
+        let a = x + y + z ;
+
+        document.getElementById("display").innerHTML =  a/3;
+
+
+
+    }
+
+
+</script>
+    
+</html>
